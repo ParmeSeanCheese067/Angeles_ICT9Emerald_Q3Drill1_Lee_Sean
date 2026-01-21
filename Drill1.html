@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial;
+            background-color: #f2f2f2;
+
+            position: absolute;
+            top: 39%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="box" id="output"></div>
+    <script>
+        //Addition
+        let Addition1 = 10;
+
+        //Addition 2
+        let Addition2 = 9 ;
+
+        //Minuend
+        let Minuend = "30 ";
+
+        //Subtrahend]
+        let Subtrahend = "11 ";
+
+        //Division]
+        let Dividend = "38";
+
+        //Division]
+        let Divisor = "2" ;
+
+        //Multiplication
+        let Multiplicand = "1" ;
+
+        //Multiplication
+        let Multiplier = "19" ;
+
+        let sum= Addition1 + Addition2;
+        let diff=Minuend - Subtrahend;
+        let product=Multiplicand * Multiplier;
+        let quotient=Dividend / Divisor;
+        
+
+        document.getElementById("output").innerHTML = 
+         "<h2>Basic Calculator Display</h2>" +
+         "<b>Addition:</b> " + Addition1 + " + " + Addition2 + " = " + sum + "<br>" +
+        "<b>Subtraction:</b> " + Minuend + " - " + Subtrahend + " = " + diff + "<br>" +
+        "<b>Multiplication:</b> " + Multiplicand + " * " + Multiplier + " = " + product + "<br>" +
+        "<b>Division:</b> " + Dividend + " / " + Divisor + " = " + quotient;
+    </script>
+        
+      
+</body>
+</html>
